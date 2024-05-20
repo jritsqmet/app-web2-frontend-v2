@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "producto": "Celular",
+      "tipo": "ropa",
+      "precio": 233
+    },
+    {
+      "id": "3",
+      "producto": "Camiseta",
+      "tipo": "ropa",
+      "precio": 100
+    },
+    {
+      "id": "4",
+      "producto": "Tablet",
+      "tipo": "tecnologia",
+      "precio": 340
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<form (ngSubmit)="guardar(formulario)" #formulario="ngForm">
+    <input type="text" placeholder="ID" class="form-control" name="id" [(ngModel)]="id">
+
+    <input type="text" placeholder="Producto" class="form-control" name="producto" [(ngModel)]="producto">
+
+    <select class="form-control" name="tipo" [(ngModel)]="tipo">
+        <option value="tecnologia">Tecnología</option>
+        <option value="ropa">Ropa</option>
+        <option value="comida">Comida</option>
+    </select>
+
+    <input type="number" placeholder="Precio" class="form-control" name="precio" [(ngModel)]="precio">
+
+    <button class="btn btn-primary">Enviar</button>
+</form>
