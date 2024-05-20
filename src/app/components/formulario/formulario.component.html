@@ -1,15 +1,20 @@
-<form (ngSubmit)="guardar(formulario)" #formulario="ngForm">
-    <input type="text" placeholder="ID" class="form-control" name="id" [(ngModel)]="id">
+<div class="container" style="width: 50%;">
+    <form (ngSubmit)="cargar(form)" #form="ngForm">
+        Ingrese id:
+        <input type="text" class="form-control" name="id" [(ngModel)]=id>
 
-    <input type="text" placeholder="Producto" class="form-control" name="producto" [(ngModel)]="producto">
+        Ingrese nombre:
+        <input type="text" class="form-control" name="nombre" [(ngModel)]=nombre>
 
-    <select class="form-control" name="tipo" [(ngModel)]="tipo">
-        <option value="tecnologia">Tecnología</option>
-        <option value="ropa">Ropa</option>
-        <option value="comida">Comida</option>
-    </select>
+        Ingrese apellido:
+        <input type="text" class="form-control" name="apellido" [(ngModel)]=apellido>
 
-    <input type="number" placeholder="Precio" class="form-control" name="precio" [(ngModel)]="precio">
+        Ingrese email:
+        <input type="text" class="form-control" name="email" [(ngModel)]=email>
 
-    <button class="btn btn-primary">Enviar</button>
-</form>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+    </form>
+  
+</div>
+
+

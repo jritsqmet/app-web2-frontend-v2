@@ -1,0 +1,22 @@
+{
+  "autores": [
+    {
+      "id": "12",
+      "nombre": "aaa",
+      "apellido": "sss",
+      "email": "ddd"
+    },
+    {
+      "id": "5453",
+      "nombre": "asd",
+      "apellido": "aa",
+      "email": "234234"
+    },
+    {
+      "id": "112",
+      "nombre": "Juan",
+      "apellido": "Paz",
+      "email": "jp@uip.com"
+    }
+  ]
+}

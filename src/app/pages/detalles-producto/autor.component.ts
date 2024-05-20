@@ -1,23 +1,23 @@
 import { Component, inject } from '@angular/core';
-import { ProductoService } from '../../services/producto.service';
+import { AutorService } from '../../services/autor.service';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-detalles-producto',
+  selector: 'app-autor',
   standalone: true,
   imports: [FormsModule],
-  templateUrl: './detalles-producto.component.html',
-  styleUrl: './detalles-producto.component.css'
+  templateUrl: './autor.component.html',
+  styleUrl: './autor.component.css'
 })
-export class DetallesProductoComponent {
+export class AutorComponent {
 
   id: any;
   producto: any;
   tipo: any;
   precio: any
   
-  servicio = inject(ProductoService)
+  servicio = inject(AutorService)
   ruta = inject(ActivatedRoute)
   
 

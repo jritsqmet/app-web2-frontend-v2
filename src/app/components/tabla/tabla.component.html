@@ -2,24 +2,22 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th>Producto</th>
-        <th>Tipo</th>
-        <th>Precio</th>
-        <th>Acciones</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Acción</th>
       </tr>
     </thead>
     <tbody>
      @for(item of productos; track item){
       <tr>
         <td>{{item.id}}</td>
-        <td>{{item.producto}}</td>
-        <td>{{item.tipo}}</td>
-        <td>{{item.precio}}</td>
+        <td>{{item.nombre}}</td>
+        <td>{{item.apellido}}</td>
+        <td>{{item.email}}</td>
         <td>
-            <div class="btn-group">
-                <button type="button" class="btn btn-success" [routerLink]="['/productos', item.id]">Editar</button>
-                <button type="button" class="btn btn-danger" (click)="eliminar(item.id)">Eliminar</button>
-              </div>
+          <a class="btn btn-warning" [routerLink]="['/autor', item.id]">Editar</a> 
+          <button class="btn btn-danger" (click)="eliminar(item.id)">Eliminar</button>
         </td>
       </tr>
      }

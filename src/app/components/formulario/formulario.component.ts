@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ProductoService } from '../../services/producto.service';
+import { AutorService} from '../../services/autor.service';
+import { TablaComponent } from '../tabla/tabla.component';
 
 @Component({
   selector: 'app-formulario',
@@ -11,16 +12,18 @@ import { ProductoService } from '../../services/producto.service';
 })
 export class FormularioComponent {
 
-  id: any;
-  producto: any;
-  tipo: any;
-  precio: any
-  
-  servicio = inject(ProductoService)
+  constructor(private servicio: AutorService){}
 
-  guardar(data: any) {
-    this.servicio.postProductos(data.value).subscribe()
-    
+  nombre:any
+  apellido:any
+  id:any
+  email:any
+
+  cargar(form: any) {
+
+
+    this.servicio.postProducto(form.value).subscribe()
+
   }
 
 }

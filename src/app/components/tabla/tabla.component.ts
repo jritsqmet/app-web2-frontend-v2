@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { ProductoService } from '../../services/producto.service';
+import { AutorService, } from '../../services/autor.service';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -13,10 +13,10 @@ export class TablaComponent {
 
   productos: any;
 
-  servicio = inject(ProductoService)
+  servicio = inject(AutorService)
   
   ngOnInit() {
-    this.servicio.getProductos().subscribe(p => {
+    this.servicio.getProducto().subscribe(p => {
       this.productos = p;
     })
   }
