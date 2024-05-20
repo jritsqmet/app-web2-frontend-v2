@@ -9,8 +9,8 @@ export class AutorService {
 
   constructor(private http: HttpClient) { }
 
-  //private API_AUTOR = "http://localhost:8080/lista/autores2"
-  private API_AUTOR = "http://localhost:3000/autores"
+  private API_AUTOR = "http://localhost:9090/autores"
+  //private API_AUTOR = "http://localhost:3000/autores"
 
 
   getProducto():Observable<any>{
